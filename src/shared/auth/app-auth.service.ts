@@ -26,6 +26,7 @@ export class AppAuthService {
         this.clear();
     }
 
+    
     logout(reload?: boolean): void {
         abp.auth.clearToken();
         abp.utils.deleteCookie(AppConsts.authorization.encryptedAuthTokenName);
