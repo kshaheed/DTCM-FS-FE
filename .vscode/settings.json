@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/a48bf796-1ba8-4f77-80e1-d6ce8b01bc30/resourceGroups/DTCMDHSSWebHost20211001140442ResourceGroup/providers/Microsoft.Web/sites/DTCMFSFrontendAppService",
+    "appService.deploySubpath": "dist"
+}
