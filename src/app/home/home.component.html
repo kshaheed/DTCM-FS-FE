@@ -4,9 +4,14 @@
       <div class="row">
         <div class="col-12">
           <h1>{{ "HomePage" | localize }}</h1>
+
+          <input type="file" (change)="fileChange($event)" placeholder="Upload file" accept=".pdf">
+          <input type="file" class="form-control" (change)="addfile($event)" placeholder="Upload file" accept=".csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel">    
+
         </div>
       </div>
     </div>
+    
   </section>
   <section class="content px-2">
     <div class="container-fluid">

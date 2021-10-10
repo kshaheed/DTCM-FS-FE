@@ -38,7 +38,7 @@ import { SidebarComponent } from './layout/sidebar.component';
 import { SidebarLogoComponent } from './layout/sidebar-logo.component';
 import { SidebarUserPanelComponent } from './layout/sidebar-user-panel.component';
 import { SidebarMenuComponent } from './layout/sidebar-menu.component';
-
+import { AttachmentService } from './home/attachment.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -84,7 +84,7 @@ import { SidebarMenuComponent } from './layout/sidebar-menu.component';
     SharedModule,
     NgxPaginationModule,
   ],
-  providers: [],
+  providers: [AttachmentService],
   entryComponents: [
     // tenants
     CreateTenantDialogComponent,
