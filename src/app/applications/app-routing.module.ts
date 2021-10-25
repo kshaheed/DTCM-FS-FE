@@ -9,7 +9,7 @@ import { TenantsComponent } from './tenants/tenants.component';
 import { RolesComponent } from 'app/roles/roles.component';
 import { ChangePasswordComponent } from './users/change-password/change-password.component';
 import { UserApplicationsComponent } from './applications/user-applications.component';
-import { BackOfficeApplicationsComponent } from './applications/backOffice-applications.component';
+import { BackOfficeApplicationsComponent } from './backOffice-applications.component';
 
 @NgModule({
     imports: [
@@ -20,6 +20,7 @@ import { BackOfficeApplicationsComponent } from './applications/backOffice-appli
                 children: [
                     { path: 'UserApplications', component: UserApplicationsComponent,  canActivate: [AppRouteGuard] },
                     { path: 'BackOfficeApplications', component: BackOfficeApplicationsComponent,  canActivate: [AppRouteGuard] },
+
                     { path: 'home', component: HomeComponent,  canActivate: [AppRouteGuard] },
                     { path: 'users', component: UsersComponent, data: { permission: 'Pages.Users' }, canActivate: [AppRouteGuard] },
                     { path: 'roles', component: RolesComponent, data: { permission: 'Pages.Roles' }, canActivate: [AppRouteGuard] },

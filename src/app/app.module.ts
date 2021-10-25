@@ -39,6 +39,10 @@ import { SidebarLogoComponent } from './layout/sidebar-logo.component';
 import { SidebarUserPanelComponent } from './layout/sidebar-user-panel.component';
 import { SidebarMenuComponent } from './layout/sidebar-menu.component';
 import { AttachmentService } from './home/attachment.service';
+import { UserApplicationsComponent } from './applications/user-applications.component';
+import { ApplicationsService } from './applications/Applications.service';
+import { BackOfficeApplicationsComponent } from './applications/backOffice-applications.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -67,7 +71,9 @@ import { AttachmentService } from './home/attachment.service';
     SidebarComponent,
     SidebarLogoComponent,
     SidebarUserPanelComponent,
-    SidebarMenuComponent
+    SidebarMenuComponent,
+    UserApplicationsComponent,
+    BackOfficeApplicationsComponent
   ],
   imports: [
     CommonModule,
@@ -84,7 +90,7 @@ import { AttachmentService } from './home/attachment.service';
     SharedModule,
     NgxPaginationModule,
   ],
-  providers: [AttachmentService],
+  providers: [AttachmentService,ApplicationsService],
   entryComponents: [
     // tenants
     CreateTenantDialogComponent,
